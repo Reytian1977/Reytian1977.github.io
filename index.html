@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Project Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script1.js"></script>
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div class="container-fluid">
+
+            <div id="logo" class="d-flex justify-content-center">
+
+                <img src="img/ER-logo.webp" alt="">
+
+            </div>
+
+            <nav class="d-flex justify-content-end">
+
+                <a href="#" data-bs-toggle="modal" data-bs-target="#access-modal">Class</a>
+
+                <a href="index.html"> Favorites</a>
+
+            </nav>
+
+            <div class="m-5">
+
+                <h1>Personages</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="Affichages" class="d-flex container-fluid">
+
+
+    </div>
+
+</main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="access-modal" tabindex="-1" aria-labelledby="access-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="access-modalLabel">Création de personnages</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="class">Classe :</label>
+                        <select id="class" name="class" required>
+                            <option value="">Choisir une classe</option>
+                            <option value="Hero">Hero</option>
+                            <option value="Bandit">Bandit</option>
+                            <option value="Astrologer">Astrologer</option>
+                            <option value="Warrior">Warrior</option>
+                            <option value="Prisioner">Prisoner</option>
+                            <option value="Confessor">Confessor</option>
+                            <option value="Wretch">Wretch</option>
+                            <option value="Vagabond">Vagabond</option>
+                            <option value="Prophet">Prophet</option>
+                            <option value="Samurai">Samurai</option>
+                        </select>
+                    </div>
+
+                    <div class="d-block p-2 col-3">
+                        <div class="d-flex p-2 justify-content-between">
+                            <label for="strength">Force :</label>
+                            <input type="number" id="strength" name="strength" min="1" max="99" required>
+                        </div>
+
+                        <div class="d-flex p-2 justify-content-between">
+                            <label for="dexterity">Dextérité :</label>
+                            <input type="number" id="dexterity" name="dexterity" min="1" max="99" required>
+                        </div>
+
+                        <div class="d-flex p-2 justify-content-between">
+                            <label class="form-label" for="vitality">Vitalité :</label>
+                            <input type="range" id="vitality" name="vitality" min="1" max="25" required>
+                        </div>
+
+                        <div class="d-flex p-2 justify-content-between">
+                            <label for="magic">Magie :</label>
+                            <input type="number" id="magic" name="magic" min="1" max="99" required>
+                        </div>
+
+                        <div class="d-flex p-2 justify-content-between">
+                            <label for="faith">Foi :</label>
+                            <input type="number" id="faith" name="faith" min="1" max="99" required>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="submit" class="btn btn-primary">Créer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+</html>
